@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 12, 2014, 9:53:40 PM
+    Author     : Stunt Master
+*/
+
+#main
+{
+    background-color: cornflowerblue;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    height:780px;
+    width:1220px;
+}
+#leftForm
+{
+    background-color: #ffff99;
+    height:773px;
+    width:200px;
+    float:left;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    
+
+}
+#rightForm
+{
+    background-color: #ffff99;
+    height:778px;
+    width:1000px;
+    float:right;
+
+}
+#Table
+{
+    background-color: #ffffcc;
+    height:305px;
+    width:1000px;
+    float: right;
+    border-color: #94C5EB;
+    overflow: scroll;
+}
+
+#sort
+{
+    background-color: orange;
+    height:30px;
+    width:1000px;
+    float: right;
+    alignment-adjust: central;
+    padding-top: 7px;
+}
+#detail
+{
+    background-color: #ffffcc;
+    height:416px;
+    width:1000px;
+    float: right;
+}
+body
+{
+    background-color: #94C5EB;   
+}
+#header
+{
+    background-color:cornflowerblue;
+    text-align: center;
+    font-style: italic;
+    text-decoration-color: white;
+    padding-bottom: 10px;
+}
+#name
+{
+    text-align: start;
+    font-size: 50px;
+    font-family: cursive;
+}
+#account
+{
+    text-align: end;
+    font-size: 30px;
+
+}
+h1
+{
+    margin-bottom:0;
+}
+#ChangeLibrary
+{
+    background-color:#EEEEEE;
+    height:100px;
+    width:200px;
+    float:left;
+}
+#CreateLibrary
+{
+    background-color:palegoldenrod;
+    height:100px;
+    width:200px;
+    float:left;
+}
+/*Table2
+{
+    border-spacing: 1px;
+}*/
+scrollit 
+{
+    overflow:scroll;
+    height:100px;   
+}

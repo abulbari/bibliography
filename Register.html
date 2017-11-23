@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Registration Page</title>
+
+        <link rel="stylesheet" href="css/base.css" type="text/css" media="screen" charset="utf-8"/>
+        <link rel="stylesheet" href="css/form.css" type="text/css" media="screen" charset="utf-8"/>
+
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="image/register_button.png" alt="" width="500" height="50">
+                <br/><br/><h1>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                Welcome To Registration Page!!!<br/><br/></h1>
+            </div>
+            <br/><br/><br/><br/>
+            <div id="content">
+                <br/>
+                <div id="signup">
+            
+                    <h2>Sign up</h2>  
+                    <form name="register" action="register.php" method="post">
+
+                        <div>
+                            <label for="email">Email:</label>
+                            <input name="email" id="email" type="text"/>
+                        </div>
+
+                        <div>
+                            <label for="pwd">Password:</label>
+                            <input name="pwd" id="pwd" type="password" />
+                        </div>
+
+                        <div>
+                            <label for="lname">Last Name:</label>
+                            <input name="lname" id="lname" type="text"/>
+                        </div>
+
+                        <div>
+                            <label for="fname">First Name:</label>
+                            <input name="fname" id="fname" type="text"/>
+                        </div>
+
+                        <div>
+                            <label for="dob">Date of Birth(dd-mm-yyyy):</label>
+                            <input name="dob" id="dob" type="text"/>
+                        </div>
+                        <div>
+                            <label for="sex">Sex:</label>
+                            <input type="text" name="sex" id="sex">
+                        </div>
+                        <div>
+                            <input type="submit" value="Register" onclick="return verify();"/>
+                            <input type="reset" value="Cancel"/>
+                        </div>
+
+                    </form>
+                </div>
+
+                <p id="disclaimer">
+                    Disclaimer! 
+                </p>
+            </div>
+            <div id="footer">
+                <p>
+                    &copy; Copyright 2010 Bibliography Productions
+                </p>
+            </div>
+        </div>
+        <script type="text/javascript" >
+            function verify() /*function to check userid & password*/
+            {
+                var error_msg = "";
+                var f = document.forms["register"];
+                var emailregex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                var name = /^[a-zA-Z][a-zA-Z\\s]+$/;
+                if (f.email.value.length === 0)
+                {
+                    error_msg += "Please Enter Email\n";
+                }
+                if (f.pwd.value.length === 0)
+                {
+                    error_msg += "Please Enter Password\n";
+                }
+                if (f.fname.value.length === 0)
+                {
+                    error_msg += "Please Enter first name\n";
+                }
+                if (f.lname.value.length === 0)
+                {
+                    error_msg += "Please Enter Last Name\n";
+                }
+                if (f.dob.value.length === 0)
+                {
+                    error_msg += "Please Enter Date of Birth\n";
+                }
+                if (f.sex.value.length === 0)
+                {
+                    error_msg += "Please Enter You Gender\n";
+                }
+                if (emailregex.test(f.email.value) === false)
+                {
+                    error_msg += "Incorrect email was entered\n";
+                }
+                if(name.test(f.lname.value) === false)
+                {
+                    error_msg += "Last name will accept only alphabets\n";
+                }
+                if(name.test(f.fname.value) === false)
+                {
+                    error_msg += "First name will accept only alphabets\n";
+                }
+
+                if (error_msg.length !== 0)
+                {
+                    alert(error_msg);
+                    return false;
+                }
+                else
+                {
+                    return true;
+
+                }
+                /*the following code checkes whether the entered userid and password are matching*/
+            }
+        </script>
+    </body>
+</html>

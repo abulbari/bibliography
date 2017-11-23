@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 12, 2014, 9:42:06 PM
+    Author     : Stunt Master
+*/
+
+/* Reset CSS */
+
+input 
+{
+    font: 20px Times New Roman;
+    width: 300px;
+    height: 30px;
+    position: center;
+  
+}
+div
+{
+    text-align:center;
+    color:black;
+    font : 20px Arial;
+    position: absolute relative;
+} 
+p
+{
+    text-align:center;
+    color:while;
+    font : 20px serif;
+}
+h1
+{ 
+    text-align: center;
+    font-size:50px;
+    color: white;
+    font-family: New Times Roman;
+    
+}
+#register
+{
+    font-family: sans-serif;
+    color: black;
+    text-emphasis-color: #172322;
+}

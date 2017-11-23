@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 15, 2014, 8:05:20 PM
+    Author     : Stunt Master
+*/
+
+label 
+{
+  display: block;
+}
+label.valid 
+{
+  width: 24px;
+  background: url(valid.png) center center no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+label.error 
+{
+  padding-left: 5px;
+  display: inline-block;
+}
+
+input 
+{
+  display: inline-block;
+}
+
+form div 
+{
+  padding: 5px;
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+div
+{
+    text-align: left;
+}
+
+button 
+{
+  margin-top: 10px;
+}

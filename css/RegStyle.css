@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 13, 2014, 1:30:28 PM
+    Author     : Stunt Master
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 12, 2014, 9:42:06 PM
+    Author     : Stunt Master
+*/
+
+/* Reset CSS */
+
+body 
+{
+	color: red;
+	font: 14px Arial;
+	//position: absolute relative;
+}
+input 
+{
+    font: 20px Times New Roman;
+}
+div
+{
+    text-align:center;
+    color:black;
+    font : 10px Times New Roman;
+    //position: absolute relative;
+    //alignment-adjust: text-before-edge;
+} 
+
+p
+{
+    text-align:center;
+    color:black;
+    font : 20px Arial;
+}
